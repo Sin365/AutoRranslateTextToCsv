@@ -9,7 +9,7 @@ namespace AutoRranslateTextToCsv
         const string InDir = "Input";
         const string OutDir = "Out";
         const string SrcDataFile = "_TextDictionary.csv";
-        const string Ver = "0.1";
+        const string Ver = "0.2";
         static Dictionary<string, string> mDictSrcData;
         static void Main(string[] args)
         {
@@ -138,7 +138,7 @@ namespace AutoRranslateTextToCsv
                         string newline = "";
                         for (int j = 0; j < valueArr.Length; j++)
                         {
-                            if (j == 2)
+                            if (j == 3)
                                 newline += EncodingConvert(Encoding.GetEncoding("gb2312"), Encoding.GetEncoding("shift-jis"), Resultline);
                             else
                                 newline += valueArr[j];
