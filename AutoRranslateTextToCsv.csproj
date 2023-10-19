@@ -8,11 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
+    <Compile Remove="SrcData\**" />
+    <EmbeddedResource Remove="SrcData\**" />
+    <None Remove="SrcData\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="SrcData\" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
